@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FormWizard_v4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
+	<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="~/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+	<!-- DATE-PICKER -->
+	<link rel="stylesheet" href="~/vendor/date-picker/css/datepicker.min.css">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+	<div class="wrapper_meu">
+		<div class="image-holder">
+			<img src="~/images/Logo_WBt.png" alt="" style="width:140px; height:50px">
+		</div>
+		<form action="~/Home/Index" method="post">
+			<div class="form-header">
+				<h2 style="color:#ffffff;">Precisamos saber algumas informaçoes suas, por favor responda.</h2>
+			</div>
+			<div id="wizard_meu">
+				<!-- SECTION 1 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 26px;">
+						<label for="">
+							Você Costuma Fazer compras em lojas fisicas?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="" class="option"></option>
+								<option value="sim" class="option">Sim</option>
+								<option value="nao" class="option">Não</option>
+								<option value="as vezes" class="option">As Vezes</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Você Costuma comprar artigos esportivos?:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="" class="option"></option>
+								<option value="sim" class="option">Sim</option>
+								<option value="nao" class="option">Não</option>
+								<option value="asvezes" class="option">As Vezes</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Para qual time você torçe?:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="" class="option"></option>
+								<option value="saopaulo" class="option">São Paulo</option>
+								<option value="corintians" class="option">Corintians</option>
+								<option value="palmeiras" class="option">Palmeiras</option>
+								<option value="santos" class="option">Santos</option>
+								<option value="flamengo" class="option">Flamengo</option>
+								<option value="fluminense" class="option">Fluminense</option>
+								<option value="botafogo" class="option">Botafogo</option>
+								<option value="vasco" class="option">Vasco</option>
+								<option value="cruzeiro" class="option">Cruzeiro</option>
+								<option value="gremio" class="option">Grêmio</option>
+								<option value="chapecoense" class="option">Chapecoense</option>
+								<option value="atleticomg" class="option">Atlético-MG</option>
+								<option value="internacional" class="option">Internacional</option>
+								<option value="sport" class="option">Sport</option>
+								<option value="bahia" class="option">Bahia</option>
+								<option value="ceara" class="option">Ceará</option>
+								<option value="vitoria" class="option">Vitória</option>
+								<option value="fortaleza" class="option">Fortaleza</option>
+								<option value="vasco" class="option">Vasco</option>
+								<option value="" class="option">...Europeus...</option>
+								<option value="barcelona" class="option">Barcelona</option>
+								<option value="realmadrid" class="option">Real Madrid</option>
+								<option value="parissaintgermain" class="option">Paris Saint-Germain</option>
+								<option value="juventus" class="option">Juventus</option>
+								<option value="bayerndemunique" class="option">Bayern de Munique</option>
+								<option value="ajax" class="option">Ajax</option>
+								<option value="benifica" class="option">Benefica</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Se o seu time não está acima, digite aqui:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+
+						<a href="#" class="btn btn-primary btn-custom">Proximo  -></a>
+					</div>
+					<!-- <div class="form-row">
+						 <label for="">
+							 Instructor Username:
+						 </label>
+						 <div class="form-holder">
+							 <input type="text" class="form-control">
+						 </div>
+					 </div>		-->
+				</section>
+
+				<!-- SECTION 2 -->
+				<h4></h4>
+				<section>
+					<div class="form-row">
+						<label for="">
+							Quanto de dinheiro, você pretende gastar:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Qual é a sua principal forma de pagamento:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="" class="option"></option>
+								<option value="dinheiro" class="option">Dinheiro em Especie</option>
+								<option value="cardcred" class="option">Cartão de Crédito</option>
+								<option value="carddebito" class="option">Cartão de Debito</option>
+								<option value="cheque" class="option">Cheque</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+						
+					</div>
+					<!--<div class="form-row">
+						<label for="">
+							Digite o seu Email:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 3.4vh">
+						<label for="">
+							Numero de Telefone:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 50px;">
+						<label for="">
+							Sexo:
+						</label>
+						<div class="form-holder">
+							<div class="checkbox-circle">
+								<label class="masculino">
+									<input type="radio" name="gender" value="masculino" checked> Masculino<br>
+									<span class="checkmark"></span>
+								</label>
+								<label class="feminino">
+									<input type="radio" name="gender" value="feminino"> Feminino<br>
+									<span class="checkmark"></span>
+								</label>
+								<label class="outros">
+									<input type="radio" name="gender" value="outros"> Outros<br>
+									<span class="checkmark"></span>
+								</label>
+
+							</div>
+						</div>
+					</div>-->
+				</section>
+
+				<!-- SECTION 3
+				<h4></h4>
+				<section>
+					<div class="form-row">
+						<label for="">
+							Course ID:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control" placeholder="Ex. abc 12345 or abc 1234L">
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Course Title:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control" placeholder="Ex. Intro to physic">
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Section(s):
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control" placeholder="Ex. 3679 or 33fa, 4295">
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 38px">
+						<label for="">
+							Select Teacher:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="frances meyer" class="option">Frances Meyer</option>
+								<option value="johan lucas" class="option">Johan Lucas</option>
+								<option value="merry linn" class="option">Merry Linn</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+
+				</section>-->
+				<!--SECTION 4-->
+				<h4></h4>
+				<section>
+					<div class="form-row">
+						<label for="">
+							Digite o seu Nome:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<label for="">
+							Data de Aniversario:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd - mm - yyyy" id="dp1">
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 3.4vh">
+						<label for="">
+							Qual a sua idade?:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Pais de Origem:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="" class="option"></option>
+								<option value="brasil" class="option">Brasil</option>
+								<option value="argentina" class="option">Argentina</option>
+								<option value="bolivia" class="option">Bolivia</option>
+								<option value="colômbia" class="option">Colômbia</option>
+								<option value="equador" class="option">Equador</option>
+								<option value="guiana" class="option">Guiana</option>
+								<option value="paraguai" class="option">Paraguai</option>
+								<option value="peru" class="option">Peru</option>
+								<option value="suriname" class="option">Suriname</option>
+								<option value="uruguai" class="option">Uruguai</option>
+								<option value="venezuela" class="option">Venezuela</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="">
+							Estado:
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value=""></option>
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+								<option value="ES">Estrangeiro</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 3.4vh">
+						<label for="">
+							Numero de Telefone:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 50px;">
+						<label for="">
+							Sexo:
+						</label>
+						<div class="form-holder">
+							<div class="checkbox-circle">
+								<label class="masculino">
+									<input type="radio" name="gender" value="masculino" checked> Masculino<br>
+									<span class="checkmark"></span>
+								</label>
+								<label class="feminino">
+									<input type="radio" name="gender" value="feminino"> Feminino<br>
+									<span class="checkmark"></span>
+								</label>
+								<label class="outros">
+									<input type="radio" name="gender" value="outros"> Outros<br>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox-circle" style="margin-bottom: 50px;">
+						<label>
+							<input type="checkbox" checked>Eu concordo com todas as declarações nos Termos e Condições
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</section>
+			</div>
+		</form>
+	</div>
+
+	<script src="~/js/jquery-3.3.1.min.js"></script>
+
+	<!-- JQUERY STEP -->
+	<script src="~/js/jquery.steps.js"></script>
+
+	<!-- DATE-PICKER -->
+	<script src="~/vendor/date-picker/js/datepicker.js"></script>
+	<script src="~/vendor/date-picker/js/datepicker.en.js"></script>
+
+	<script src="~/js/main.js"></script>
+	<!-- Template created and distributed by Colorlib -->
+
+	<script>
+		$("#finish").submit(function () {
+			//alguma ação aqui ex :
+
+			alert("Oi");
+			//$("#btn").prop('disabled', true);
+		});
+	</script>
+
+</body>
+</html>

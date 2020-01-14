@@ -1,0 +1,320 @@
+﻿@using Landpage2.Models;
+<div class="fixRight">
+    <a href="http://www.utyum.com.br" target="_blank"><img src="~/images/form-wizard.png" alt="" style="width:160px; height:50px;"></a>
+</div>
+<div class="wrapper">
+    <div class="image-holder">
+    </div>
+    <form action="~/Home/Index" method="post">
+        <div class="form-header">
+            <h2>Precisamos saber algumas informaçoes suas, por favor responda.</h2>
+        </div>
+		@Html.Raw(ViewBag.Retorno1)
+        <div id="wizard_meu">
+            <!-- SECTION 1 -->
+            <h4></h4>
+            <section>
+                <div class="tela1" style="display:block">
+                    <div class="form-row" style="margin-bottom: 26px;">
+                        <label for="">
+                            Você Costuma Fazer compras em lojas fisicas?
+                        </label>
+                        <div class="form-holder">
+                            <select name="compralog" id="compralog" class="form-control" required >
+                                <option value="" class="option"></option>
+                                <option value="Sim" class="option">Sim</option>
+                                <option value="Não" class="option">Não</option>
+                                <option value="As Vezes" class="option">As Vezes</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Você Costuma comprar artigos esportivos?:
+                        </label>
+                        <div class="form-holder">
+                            <select name="comprasport" id="comprasport" class="form-control" required>
+                                <option value="" class="option"></option>
+                                <option value="Sim" class="option">Sim</option>
+                                <option value="Não" class="option">Não</option>
+                                <option value="As vezes" class="option">As Vezes</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Para qual time você torçe?:
+                        </label>
+                        <div class="form-holder">
+                            <select name="time" id="time" class="form-control" title="Escolha seu Time do Coração">
+                                <option value="" class="option"></option>
+                                <option value="Sao Paulo" class="option">São Paulo</option>
+                                <option value="Corintians" class="option">Corintians</option>
+                                <option value="Palmeiras" class="option">Palmeiras</option>
+                                <option value="Santos" class="option">Santos</option>
+                                <option value="Flamengo" class="option">Flamengo</option>
+                                <option value="Fluminense" class="option">Fluminense</option>
+                                <option value="Bota Fogo" class="option">Botafogo</option>
+                                <option value="Vasco" class="option">Vasco</option>
+                                <option value="Cruzeiro" class="option">Cruzeiro</option>
+                                <option value="Gremio" class="option">Grêmio</option>
+                                <option value="Chapecoense" class="option">Chapecoense</option>
+                                <option value="Atletico-MG" class="option">Atlético-MG</option>
+                                <option value="Internacional" class="option">Internacional</option>
+                                <option value="Sport" class="option">Sport</option>
+                                <option value="Bahia" class="option">Bahia</option>
+                                <option value="Ceara" class="option">Ceará</option>
+                                <option value="Vitoria" class="option">Vitória</option>
+                                <option value="Fortaleza" class="option">Fortaleza</option>
+                                <option value="Vasco" class="option">Vasco</option>
+                                <option value="" class="option">.....Europeus.....</option>
+                                <option value="Barcelona" class="option">Barcelona</option>
+                                <option value="Real Madrid" class="option">Real Madrid</option>
+                                <option value="Paris Saint Germain" class="option">Paris Saint-Germain</option>
+                                <option value="Juventus" class="option">Juventus</option>
+                                <option value="Bayern De Munique" class="option">Bayern de Munique</option>
+                                <option value="Ajax" class="option">Ajax</option>
+                                <option value="Benifica" class="option">Benefica</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Se o seu time não está acima, digite aqui:
+                        </label>
+                        <div class="form-holder">
+                            <input type="text" name="outtime" id="outtime" class="form-control" title="Se Seu Time não estiver na lista acima coloque aqui.">
+                        </div>
+                    </div>
+                    <div aling="rigth">
+                        <a href="Javascript:void(0)" onclick="selected2('tela2');" class="btn btn-primary btn-custom">Proximo</a>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 2 -->
+            <h4></h4>
+            <section>
+                <div class="tela2" style="display:none">
+                    <div class="form-row">
+                        <label for="">
+                            Quanto de dinheiro, você pretende gastar:
+                        </label>
+                        <div class="form-holder">
+                            <input type="text" name="dingast" id="dingast" class="form-control" required title="Entre com o Valor Ex: 1,200.00">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Qual é a sua principal forma de pagamento:
+                        </label>
+                        <div class="form-holder">
+                            <select name="formpag" id="formpag" class="form-control" required>
+                                <option value="" class="option"></option>
+                                <option value="Dinheiro" class="option">Dinheiro em Especie</option>
+                                <option value="Cartão de Credito" class="option">Cartão de Crédito</option>
+                                <option value="Cartão de Debito" class="option">Cartão de Debito</option>
+                                <option value="cheque" class="option">Cheque</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <a href="Javascript:void(0)" onclick="selected2('tela1');" class="btn btn-primary btn-custom">Voltar</a>
+                    <a href="Javascript:void(0)" onclick="selected2('tela3');" class="btn btn-primary btn-custom">Proximo</a>
+                </div>
+            </section>
+            <!-- SECTION 3 -->
+            <h4></h4>
+            <section>
+                <div class="tela3" style="display:none">
+                    <div class="form-row">
+                        <label for="">
+                            Pais de Origem:
+                        </label>
+                        <div class="form-holder">
+							<select name="pais" id="pais" class="form-control" required>
+								<option value="" class="option"></option>
+								<option value="BRASIL" class="option">BRASIL</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+					<div class="form-row">
+						<label for="">
+							Estado:
+						</label>
+						<div class="form-holder">
+							<select name="estado" id="estado" class="form-control" required>
+								<option value="" class="option"></option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row" style="margin-bottom: 38px">
+                        <label for="">
+                            Cidade:
+                        </label>
+                        <div class="form-holder">
+							<select name="cidade" id="cidade" class="form-control" required>
+								<option value=""></option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Bairro
+                        </label>
+                        <div class="form-holder">
+							<select name="bairro" id="bairro" class="form-control" required>
+								<option value=""></option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <a href="Javascript:void(0)" onclick="selected2('tela2');" class="btn btn-primary btn-custom">Voltar</a>
+                    <a href="Javascript:void(0)" onclick="selected2('tela4');" class="btn btn-primary btn-custom">Proximo</a>
+                </div>
+            </section>
+            <!--SECTION 4-->
+            <h4></h4>
+            <section>
+                <div class="tela4" style="display:none">
+                    <div class="form-row">
+                        <label for="">
+                            Digite o seu Nome:
+                        </label>
+                        <div class="form-holder">
+                            <input type="text" name="nome" id="nome" class="form-control" required autocomplete="off" title="Digite seu Nome Aqui">
+							<input id='URLi0' name='URLi0' type='hidden' value='@Lay1.Host_3' />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Data de Aniversario:
+                        </label>
+                        <div class="form-holder">
+                            <input type="text" name="dt_dataniv" id="dt_dataniv" class="form-control datepicker-here" data-language='pt-BR' data-date-format="dd/mm/yyyy" required autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="">
+                            Sexo:
+                        </label>
+                        <div class="form-holder">
+                            <select name="sex" id="sex" class="form-control" required>
+                                <option value="" class="option"></option>
+                                <option value="Masculino" class="option">Masculino</option>
+                                <option value="Feminino" class="option">Feminino</option>
+                                <option value="Outros" class="option">Outros</option>
+                                <option value="Prefiro não Falar" class="option">Prefiro não Falar</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="checkbox-circle" style="margin-bottom: 40px;">
+                        <label>
+                            <input type="checkbox" name="termcond" id="termcond" required>Eu concordo com todas as declarações nos Termos e Condições
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <a href="Javascript:void(0)" onclick="selected2('tela3');" class="btn btn-primary btn-custom">Voltar</a>
+                    <button type="submit" value="submit" class="btn btn-primary btn-custom">Submit</button>
+                </div>
+            </section>
+        </div>
+    </form>
+</div>
+
+<script>
+    function selected2(value) {
+        var dadosTela1 = document.getElementsByClassName('tela1');
+        var dadosTela2 = document.getElementsByClassName('tela2');
+        var dadosTela3 = document.getElementsByClassName('tela3');
+        var dadosTela4 = document.getElementsByClassName('tela4');
+        var dadosTela5 = document.getElementsByClassName('tela5');
+        if (value != "") {
+
+            var valor_sot = value;
+
+            switch (valor_sot) {
+                case "tela1":
+                    dadosTela1[0].style.display = 'block';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'none';
+                    break;
+                case "tela2":
+                    dadosTela1[0].style.display = 'none';
+                    dadosTela2[0].style.display = 'block';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'none';
+                    break;
+                case "tela3":
+                    dadosTela1[0].style.display = 'none';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'block';
+                    dadosTela4[0].style.display = 'none';
+                    break;
+                case "tela4":
+                    dadosTela1[0].style.display = 'none';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'block';
+                    break;
+                case "tela5":
+                    dadosTela1[0].style.display = 'none';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'none';
+                    break;
+                case "tela6":
+                    dadosTela1[0].style.display = 'none';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'none';
+                    break;
+                default:
+                    dadosTela1[0].style.display = 'block';
+                    dadosTela2[0].style.display = 'none';
+                    dadosTela3[0].style.display = 'none';
+                    dadosTela4[0].style.display = 'none';
+            }
+
+        }
+    }
+    function geoFindMe() {
+    	var output = document.getElementById("out");
+
+    	if (!navigator.geolocation) {
+    		output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    		return;
+    	}
+
+    	function success(position) {
+    		var latitude = position.coords.latitude;
+    		var longitude = position.coords.longitude;
+
+    		//output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+
+    		output.innerHTML = "<input type='hidden' name='Latitude' id='Latitude' value='" + latitude + "' />" +
+    		"<input type='hidden' name='Longitude' id='Longitude' value='" + longitude + "' />';"
+
+    		var img = new Image();
+    		//img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+
+    		output.appendChild(img);
+    	}
+
+    	function error() {
+    		output.innerHTML = "Unable to retrieve your location";
+    	}
+
+    	output.innerHTML = "<p>Locating…</p>";
+
+    	navigator.geolocation.getCurrentPosition(success, error);
+    }
+</script>
+

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LandPage</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="www.utyum.com.br">
+	<link rel="icon" href="~/favicon.ico" type="image/ico" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="~/vendor/nprogres/nprogress.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="~/vendor/date-picker/css/datepicker.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+    @RenderBody()
+
+	<script src="~/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="~/vendor/fastclick/lib/fastclick.js"></script>
+	<script src="~/vendor/nprogres/nprogress.js"></script>
+	<script src="~/vendor/Chart.js/dist/Chart.min.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+	<script src="~/js/jquery.maskMoney.min.js"></script>
+	<script src="~/js/jquery.maskedinput.js"></script>
+	<script src="~/js/jquery.mask.min.js"></script>
+    <script src="~/js/jquery.steps.js"></script>
+    <script src="~/vendor/date-picker/js/datepicker.js"></script>
+    <script src="~/vendor/date-picker/js/datepicker.en.js"></script>
+	<script src="~/js/custom.js"></script>
+    <script src="~/js/main.js"></script>
+
+    <script>
+	$('.dt_dataniv').datepicker({ format: "dd/mm/yyyy", autoclose: true, language: "pt-BR" });
+    //getLocation()
+    var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        }
+        else { x.innerHTML = "Seu browser não suporta Geolocalização."; }
+    }
+    function showPosition(position) {
+        x.innerHTML = "<input type='hidden' name='Latitude' id='Latitude' value='" + position.coords.latitude + "' />" +
+        "<input type='hidden' name='Longitude' id='Longitude' value='" + position.coords.longitude + "' />";
+    }
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "<font color='#ff0000'>Concordo enviar minha Geolocalização.</font>"
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Localização indisponível."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "A requisição expirou."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "Algum erro desconhecido aconteceu."
+                break;
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+C:\Desenv\Landpage2\conexao_banco\conexao_banco\bin\Debug\conexao_banco.exe.config
